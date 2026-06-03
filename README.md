@@ -1,6 +1,6 @@
 # Contact Keeper (Vanilla JS)
 
-A small practice project that lets you add contacts, store them in `localStorage`, and search them in real time. It is intentionally simple so you can focus on core JavaScript concepts.
+A small practice project that lets you add contacts, store them in `localStorage`, and search them in real time. It is intentionally simple so you can focus on core JavaScript concepts!.
 
 ## Features
 - Add contacts with name, phone, and email.
