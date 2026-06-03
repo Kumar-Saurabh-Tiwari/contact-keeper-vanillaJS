@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Keeper</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=Source+Serif+4:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+    <header class="hero">
+        <p class="hero-tag">Vanilla JS practice</p>
+        <h1>Contact Keeper</h1>
+        <p class="hero-subtitle">Add, search, and store contacts in localStorage.</p>
+    </header>
+
+    <main class="app">
+        <section class="panel form-panel">
+            <h2>Add a contact</h2>
+            <p class="panel-subtitle">All fields are required.</p>
+
+            <form class="contact-form" autocomplete="off">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Jane Doe" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone" placeholder="555-123-4567" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="jane@example.com" required>
+                </div>
+
+                <button type="submit" class="primary-btn">Save contact</button>
+            </form>
+        </section>
+
+        <section class="panel list-panel">
+            <div class="panel-header">
+                <div>
+                    <h2>Contact list</h2>
+                    <p class="panel-subtitle">Search updates instantly.</p>
+                </div>
+            </div>
+
+            <div class="search-container">
+                <label for="search">Search</label>
+                <input type="text" id="search" name="search" placeholder="Search by name, phone, or email">
+            </div>
+
+            <ul id="contact-list" class="contact-list"></ul>
+        </section>
+    </main>
+</body>
+
+</html>
